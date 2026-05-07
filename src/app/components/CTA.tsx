@@ -56,7 +56,7 @@ export default function CTA() {
           method="post"
           action="/api/waitlist"
           onSubmit={handleSubmit}
-          className="rounded-[2rem] border border-border/90 bg-card p-6 sm:p-8 shadow-sm"
+          className="paper-panel animate-drift-in rounded-[2rem] p-6 sm:p-8"
         >
           <div className="flex items-center gap-3 mb-6">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 text-white shadow-sm ring-1 ring-white/20">
@@ -64,7 +64,7 @@ export default function CTA() {
             </div>
             <div>
               <h3 className="text-xl font-semibold tracking-tight text-foreground">Join the waitlist</h3>
-              <p className="text-sm text-muted-foreground">A short note is enough. We&rsquo;ll reach out personally.</p>
+              <p className="text-sm text-muted-foreground">A short note is enough. If you already have a printer, tell us which one.</p>
             </div>
           </div>
 
@@ -77,7 +77,7 @@ export default function CTA() {
                 required
                 autoComplete="email"
                 placeholder="you@example.com"
-                className="w-full rounded-xl border border-border/90 bg-background px-4 py-3 text-foreground shadow-sm transition-colors outline-none placeholder:text-muted-foreground/80 focus:border-emerald-500"
+              className="w-full rounded-xl border border-border/90 bg-background/90 px-4 py-3 text-foreground shadow-sm transition-colors outline-none placeholder:text-muted-foreground/80 focus:border-emerald-500"
               />
             </label>
 
@@ -86,7 +86,7 @@ export default function CTA() {
               <select
                 name="platform"
                 defaultValue="iPhone"
-                className="w-full rounded-xl border border-border/90 bg-background px-4 py-3 text-foreground shadow-sm transition-colors outline-none focus:border-emerald-500"
+                className="w-full rounded-xl border border-border/90 bg-background/90 px-4 py-3 text-foreground shadow-sm transition-colors outline-none focus:border-emerald-500"
               >
                 <option value="iPhone">iPhone beta</option>
                 <option value="Android">Android updates</option>
@@ -100,18 +100,18 @@ export default function CTA() {
                 type="text"
                 name="printerModel"
                 autoComplete="off"
-                placeholder="Optional"
-                className="w-full rounded-xl border border-border/90 bg-background px-4 py-3 text-foreground shadow-sm transition-colors outline-none placeholder:text-muted-foreground/80 focus:border-emerald-500"
+                placeholder="Optional, if you already have one"
+                className="w-full rounded-xl border border-border/90 bg-background/90 px-4 py-3 text-foreground shadow-sm transition-colors outline-none placeholder:text-muted-foreground/80 focus:border-emerald-500"
               />
             </label>
 
             <label className="block sm:col-span-2">
-              <span className="mb-2 block text-sm font-medium text-foreground">What are you hoping to use it for?</span>
+              <span className="mb-2 block text-sm font-medium text-foreground">What kind of setup are you hoping for?</span>
               <textarea
                 name="message"
                 rows={4}
                 placeholder="Desk setup, home workflow, ADHD support, family planning, tiny receipt-printer joy..."
-                className="w-full resize-y rounded-xl border border-border/90 bg-background px-4 py-3 text-foreground shadow-sm transition-colors outline-none placeholder:text-muted-foreground/80 focus:border-emerald-500"
+                className="w-full resize-y rounded-xl border border-border/90 bg-background/90 px-4 py-3 text-foreground shadow-sm transition-colors outline-none placeholder:text-muted-foreground/80 focus:border-emerald-500"
               />
             </label>
 
@@ -159,27 +159,27 @@ export default function CTA() {
         </form>
 
         <div className="grid gap-4">
-          <div className="rounded-2xl border border-border/90 bg-card p-5 sm:p-6 shadow-sm">
+          <div className="paper-panel animate-drift-in stagger-1 rounded-2xl p-5 sm:p-6">
             <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-500 text-white shadow-sm ring-1 ring-white/20">
               <Mail className="h-5 w-5" aria-hidden="true" />
             </div>
             <p className="font-semibold text-foreground tracking-tight mb-1">What happens next</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              We read every submission, sort by platform and printer fit, and reply when there&rsquo;s a sensible next step.
+              We read every submission, sort by platform and printer fit, and reply when there is a sensible next step rather than blasting everyone at once.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-border/90 bg-card p-5 shadow-sm">
+          <div className="paper-chip animate-drift-in stagger-2 rounded-2xl p-5">
             <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground mb-2">Right now</p>
             <p className="font-semibold text-foreground tracking-tight">iPhone beta, actively testing</p>
           </div>
-          <div className="rounded-2xl border border-border/90 bg-card p-5 shadow-sm">
+          <div className="paper-chip animate-drift-in stagger-3 rounded-2xl p-5">
             <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground mb-2">Next up</p>
             <p className="font-semibold text-foreground tracking-tight">Android build, planning underway</p>
           </div>
-          <div className="rounded-2xl border border-border/90 bg-card p-5 shadow-sm">
+          <div className="paper-chip animate-drift-in stagger-4 rounded-2xl p-5">
             <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground mb-2">Best setup</p>
-            <p className="font-semibold text-foreground tracking-tight">Home Wi-Fi and an ESC/POS printer</p>
+            <p className="font-semibold text-foreground tracking-tight">Home Wi-Fi, iPhone, and an ESC/POS printer</p>
           </div>
         </div>
       </div>

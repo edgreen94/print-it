@@ -17,10 +17,10 @@ export default function Home() {
       />
       <Hero />
       <AppScreenshots />
+      <CTA />
       <WorkflowVisual />
       <FoundersNote />
       <HowItWorks />
-      <CTA />
       <Footer />
     </>
   );

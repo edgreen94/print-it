@@ -18,6 +18,39 @@
   }
 }
 
+@keyframes driftIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes paperFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-0.4deg);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+}
+
 /* Opt-in utilities — avoid animating every <section> globally (hurts perf + predictability) */
 .animate-fade-in-up {
   animation: fadeInUp 0.55s ease-out forwards;
@@ -25,6 +58,38 @@
 
 .animate-fade-in {
   animation: fadeIn 0.65s ease-out forwards;
+}
+
+.animate-drift-in {
+  animation: driftIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.animate-paper-float {
+  animation: paperFloat 7s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.stagger-1 {
+  animation-delay: 0.08s;
+}
+
+.stagger-2 {
+  animation-delay: 0.16s;
+}
+
+.stagger-3 {
+  animation-delay: 0.24s;
+}
+
+.stagger-4 {
+  animation-delay: 0.32s;
+}
+
+.stagger-5 {
+  animation-delay: 0.4s;
 }
 
 html {
@@ -37,7 +102,10 @@ html {
   }
 
   .animate-fade-in-up,
-  .animate-fade-in {
+  .animate-fade-in,
+  .animate-drift-in,
+  .animate-paper-float,
+  .animate-glow-pulse {
     animation: none;
   }
 }

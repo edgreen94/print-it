@@ -1,20 +1,21 @@
 export default function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      <div className="relative w-10 h-10 rounded-lg bg-gradient-to-br from-green-300 via-emerald-400 to-emerald-600 flex items-center justify-center p-1.5 shadow-md">
+      <div className="paper-chip relative flex h-10 w-10 items-center justify-center rounded-lg p-1.5 shadow-md">
         <svg aria-hidden="true" width="100%" height="100%" viewBox="0 0 200 200" fill="none">
-          <rect x="60" y="30" width="80" height="70" rx="3" fill="white" />
-          <text x="100" y="52" fontSize="12" fill="#1f2937" fontWeight="600" textAnchor="middle">To Do</text>
-          <circle cx="70" cy="65" r="2" fill="#1f2937" />
-          <line x1="76" y1="65" x2="130" y2="65" stroke="#cbd5e1" strokeWidth="1.5" strokeDasharray="2 2" />
-          <circle cx="70" cy="75" r="2" fill="#1f2937" />
-          <line x1="76" y1="75" x2="125" y2="75" stroke="#cbd5e1" strokeWidth="1.5" strokeDasharray="2 2" />
-          <rect x="40" y="95" width="120" height="60" rx="8" fill="#2d3748" />
-          <rect x="45" y="100" width="110" height="25" rx="4" fill="#4a5568" />
-          <circle cx="60" cy="135" r="4" fill="#48bb78" />
-          <circle cx="75" cy="135" r="4" fill="#ecc94b" />
-          <circle cx="90" cy="135" r="4" fill="#f56565" />
-          <rect x="50" y="145" width="20" height="8" rx="2" fill="#1a202c" />
+          <rect x="58" y="26" width="84" height="76" rx="5" fill="#fffdf8" stroke="#d8d0c3" strokeWidth="3" />
+          <line x1="68" y1="43" x2="132" y2="43" stroke="#111827" strokeWidth="4" strokeLinecap="round" />
+          <line x1="68" y1="54" x2="118" y2="54" stroke="#a8b1bd" strokeWidth="3" strokeLinecap="round" strokeDasharray="4 5" />
+          <circle cx="70" cy="68" r="3.5" fill="#111827" />
+          <line x1="79" y1="68" x2="129" y2="68" stroke="#c5ced8" strokeWidth="3" strokeDasharray="4 5" />
+          <circle cx="70" cy="82" r="3.5" fill="#111827" />
+          <line x1="79" y1="82" x2="121" y2="82" stroke="#c5ced8" strokeWidth="3" strokeDasharray="4 5" />
+          <rect x="38" y="98" width="124" height="62" rx="10" fill="#1f2937" />
+          <rect x="48" y="108" width="104" height="11" rx="5.5" fill="#374151" />
+          <rect x="48" y="129" width="48" height="7" rx="3.5" fill="#4ade80" />
+          <rect x="103" y="129" width="23" height="7" rx="3.5" fill="#facc15" />
+          <rect x="131" y="129" width="14" height="7" rx="3.5" fill="#fb7185" />
+          <rect x="50" y="146" width="22" height="7" rx="2.5" fill="#111827" />
         </svg>
       </div>
       <span className="font-semibold text-xl text-foreground tracking-tight">Print-It</span>

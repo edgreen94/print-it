@@ -15,21 +15,21 @@ const steps: Step[] = [
     number: "01",
     icon: Mail,
     title: "Request an invite",
-    description: "iPhone beta today, Android list behind it. No account, no waitlist theatre \u2014 just an email when we\u2019re ready for you.",
+    description: "iPhone beta today, Android list behind it. Leave an email and a little context, and we will reach out when your setup is a good fit.",
     gradient: "from-green-400 to-emerald-500",
   },
   {
     number: "02",
     icon: Cable,
     title: "Point it at your printer",
-    description: "Any ESC/POS receipt printer on your Wi-Fi will do. Setup takes about as long as finding its power cable.",
+    description: "Any ESC/POS receipt printer on your Wi-Fi will do. Pair it once, test a ticket, and the rest of the workflow stays delightfully small.",
     gradient: "from-emerald-500 to-teal-500",
   },
   {
     number: "03",
     icon: CheckSquare,
     title: "Print and finish",
-    description: "Type the task, hit print, carry the ticket. Tear it off when it\u2019s done \u2014 the stack on your desk is the progress bar.",
+    description: "Type the task, hit print, carry the ticket. Tear it off when it\u2019s done, and let the stack on your desk become the progress bar.",
     gradient: "from-lime-400 to-green-500",
   },
 ];
@@ -39,7 +39,7 @@ export default function HowItWorks() {
     <SectionShell id="how-it-works" className="bg-background">
       <SectionHeading
         title="Setup in three steps"
-        subtitle={<>From invite to first printed ticket, it&rsquo;s a coffee&rsquo;s worth of work.</>}
+        subtitle={<>From invite to first printed ticket, it&rsquo;s a short setup with very little to learn.</>}
       />
 
       <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">

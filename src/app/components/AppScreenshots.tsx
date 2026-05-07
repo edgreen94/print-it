@@ -36,8 +36,10 @@ const shots: Shot[] = [
 ];
 
 export default function AppScreenshots() {
+  const shotDelays = ["0.08s", "0.16s", "0.24s"];
+
   return (
-    <SectionShell id="screens" className="bg-gradient-to-b from-background via-muted/15 to-muted/30">
+    <SectionShell id="screens" className="bg-gradient-to-b from-background via-muted/15 to-muted/30 desk-wash">
       <SectionHeading
         title="Three screens, on purpose"
         subtitle={
@@ -48,8 +50,12 @@ export default function AppScreenshots() {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 max-w-5xl mx-auto">
-        {shots.map(({ src, alt, heading, body, blur }) => (
-          <div key={heading} className="flex flex-col items-center">
+        {shots.map(({ src, alt, heading, body, blur }, index) => (
+          <div
+            key={heading}
+            className="animate-drift-in flex flex-col items-center"
+            style={{ animationDelay: shotDelays[index] }}
+          >
             <div className="relative w-full max-w-[260px]">
               <div aria-hidden="true" className={`absolute inset-0 bg-gradient-to-br ${blur} blur-3xl scale-110 opacity-90`} />
               <div className="relative bg-gray-900 rounded-[2.25rem] md:rounded-[3rem] p-2 md:p-3 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] border-[6px] md:border-[7px] border-gray-800/95 ring-1 ring-white/5">
