@@ -2,10 +2,6 @@ name = "print-it"
 compatibility_date = "2026-04-24"
 pages_build_output_dir = "dist"
 
-[[send_email]]
-name = "WAITLIST_EMAIL"
-destination_address = "support@print-it-app.com"
-
 [vars]
 WAITLIST_FROM_EMAIL = "support@print-it-app.com"
 WAITLIST_TO_EMAIL = "support@print-it-app.com"
